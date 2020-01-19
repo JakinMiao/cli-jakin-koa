@@ -1,0 +1,8 @@
+node_modules/*
+.git/*
+testCI/*
+assets/*
+documents/*
+npm-debug.log
+log/*
+.nyc_output/*

@@ -1,0 +1,7 @@
+apps:
+  - name: cli-jakin-koa
+    script: './dist/server.js'
+    instances: max
+    exec_mode: 'cluster'
+    out_file: "/dev/null"
+    max_memory_restart: 3000M

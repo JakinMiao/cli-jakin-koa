@@ -1,0 +1,13 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-config-standard"
+  ],
+  "jsRules": {},
+  "rules": {
+    "await-promise": false,
+    "radix": false,
+    "object-curly-spacing": [false, "always"]
+  },
+  "rulesDirectory": []
+}
