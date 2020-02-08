@@ -1,7 +1,6 @@
 {
-  "name": "cli-jakin-koa",
+  "name": "{{name}}",
   "version": "1.0.0",
-  "description": "cli-jakin-koa",
   "main": "server.ts",
   "scripts": {
     "start": "node ./dist/server.js",
@@ -65,17 +64,9 @@
   "engines": {
     "node": "10.16.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JakinMiao/cli-jakin-koa.git"
-  },
   "keywords": [
     "koa"
   ],
-  "author": "Jakin",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JakinMiao/cli-jakin-koa/issues"
-  },
-  "homepage": "https://github.com/JakinMiao/cli-jakin-koa#readme"
+  "description": "{{description}}",
+  "author": "{{author}}"
 }
