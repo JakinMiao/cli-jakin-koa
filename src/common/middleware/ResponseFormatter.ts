@@ -34,7 +34,7 @@ export const format = (pattern) => {
         ctx.errorStack = error.stack
         ctx.body = {
           code: 503,
-          msg: 'Internal server error, please try again later!'
+          msg: '系统内部错误，请稍后重拾'
         }
       }
     }
