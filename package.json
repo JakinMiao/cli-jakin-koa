@@ -4,7 +4,66 @@
   "description": "cli-jakin-koa",
   "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./dist/server.js",
+    "test": "jest --runInBand",
+    "serve": "nodemon dist/src/server.js",
+    "serve-ts": "nodemon --watch 'src/' --exec 'ts-node' src/server.ts",
+    "build-ts": "./node_modules/.bin/tsc -p ./",
+    "watch-ts": "tsc -w",
+    "tslint": "./node_modules/.bin/tslint -c tslint.json 'src/**/*.ts'",
+    "ts-lint-fix": "./node_modules/.bin/tslint --fix -c tslint.json 'src/**/*.ts'",
+    "local": "NODE_ENV=development ts-node ./src/server.ts"
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "@types/koa-router": "^7.0.23",
+    "@types/mongoose": "^5.5.18",
+    "ali-oss": "^6.1.1",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.1",
+    "config": "^3.2.2",
+    "editdistance": "^0.2.2",
+    "ioredis": "^4.14.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.8.2",
+    "koa-bodyparser": "^4.2.0",
+    "koa-i18n": "^2.1.0",
+    "koa-json": "^2.0.2",
+    "koa-locale": "^1.3.0",
+    "koa-locales": "^1.12.0",
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^7.2.1",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.4",
+    "moment-timezone": "^0.5.26",
+    "mongoose": "^5.7.1",
+    "number-precision": "^1.3.1",
+    "redlock": "^4.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "superagent": "^5.1.0",
+    "superagent-bluebird-promise": "^4.2.0",
+    "tracer": "^1.0.1",
+    "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/joi": "^14.3.3",
+    "@types/koa": "^2.0.50",
+    "@types/lodash": "^4.14.141",
+    "@types/node": "^12.7.8",
+    "jest": "^24.9.0",
+    "mockjs": "^1.0.1-beta3",
+    "nock": "^10.0.6",
+    "sinon": "^7.4.2",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^8.0.1"
+  },
+  "engines": {
+    "node": "10.16.3"
   },
   "repository": {
     "type": "git",
@@ -14,7 +73,7 @@
     "koa"
   ],
   "author": "Jakin",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JakinMiao/cli-jakin-koa/issues"
   },
