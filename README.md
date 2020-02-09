@@ -17,6 +17,28 @@ Node 版本 v10 以上
 - `npm watch-ts` - 自动编译
 - `npm tslint` - tslint格式检查
 
+####QuickStart
+更新日期 2020-02-09
+
+#####clone 本项目
+```
+git clone https://github.com/JakinMiao/cli-jakin-koa.git
+```
+####使用 ycli-koa
+```
+npm i ycli-koa -g
+ycli-koa init projectname
+```
+
+
+#### 接口文档生成
+后续补充
+
+
+#### UML 设计图
+后续补充
+
+
 #### 打包说明
 
 make build TAG=xxx 根据部署环境 构建不一样的包
