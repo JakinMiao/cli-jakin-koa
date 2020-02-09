@@ -13,7 +13,7 @@ FROM node:10.16.3-alpine as build
 
 WORKDIR /data
 
-ENV TZ "Asia/Kolkata"
+ENV TZ "Asia/Shanghai"
 
 COPY --from=base /data/node_modules ./node_modules
 
@@ -24,7 +24,7 @@ RUN echo http://mirrors.aliyun.com/alpine/v3.4/main/ > /etc/apk/repositories && 
     apk update && apk add ca-certificates && \
     apk add tzdata && \
     ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && \
-    echo "Asia/Kolkata" > /etc/timezone
+    echo "Asia/Shanghai" > /etc/timezone
 
 COPY . .
 RUN ./node_modules/.bin/tsc
