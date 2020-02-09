@@ -1,8 +1,8 @@
-##cli-jakin-koa
+## cli-jakin-koa
 
 基于koa的web 脚手架
 
-####软件版本
+#### 软件版本
 
 - Node 10.16.3+
 - npm 5+
